@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Ian de Barros Seki</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <header class="bg-white shadow p-4">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+        <i class="fas fa-code text-blue-600"></i> Ian de Barros Seki
+      </h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="text-blue-600 hover:underline">Sobre</a>
+        <a href="#habilidades" class="text-blue-600 hover:underline">Habilidades</a>
+        <a href="#projetos" class="text-blue-600 hover:underline">Projetos</a>
+        <a href="#experiencias" class="text-blue-600 hover:underline">Experiências</a>
+        <a href="#contato" class="text-blue-600 hover:underline">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-4 space-y-12">
+    <section id="sobre">
+      <h2 class="text-xl font-bold mb-2">Sobre Mim</h2>
+      <p>Sou estudante de Sistemas de Informação na UFU e bolsista do PETSIMC...</p>
+    </section>
+
+    <section id="habilidades">
+      <h2 class="text-xl font-bold mb-2">Habilidades</h2>
+      <ul class="list-disc list-inside">
+        <li><i class="fas fa-terminal"></i> HTML, CSS, JavaScript, React</li>
+        <li><i class="fas fa-code-branch"></i> Python, Java, Swift</li>
+        <li><i class="fas fa-database"></i> PostgreSQL, MySQL</li>
+        <li><i class="fab fa-linux"></i> Linux, Git, Docker</li>
+        <li><i class="fas fa-robot"></i> NLP, LLMs</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2 class="text-xl font-bold mb-2">Projetos</h2>
+      <div class="relative">
+        <div id="carousel" class="carousel flex space-x-4 overflow-hidden">
+          <!-- Card 1 -->
+          <div class="carousel-item">
+            <a href="https://github.com/ibSeki/projeto1" target="_blank">
+              <div class="card">
+                <h3 class="font-bold text-lg">Projeto 1</h3>
+                <p class="text-sm text-gray-600">Descrição do Projeto 1</p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 2 -->
+          <div class="carousel-item">
+            <a href="https://github.com/ibSeki/projeto2" target="_blank">
+              <div class="card">
+                <h3 class="font-bold text-lg">Projeto 2</h3>
+                <p class="text-sm text-gray-600">Descrição do Projeto 2</p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 3 -->
+          <div class="carousel-item">
+            <a href="https://github.com/ibSeki/projeto3" target="_blank">
+              <div class="card">
+                <h3 class="font-bold text-lg">Projeto 3</h3>
+                <p class="text-sm text-gray-600">Descrição do Projeto 3</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center mt-4 space-x-4">
+          <button onclick="moveCarousel(-1)" class="btn">◀</button>
+          <button onclick="moveCarousel(1)" class="btn">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencias">
+      <h2 class="text-xl font-bold mb-2">Experiências</h2>
+      <ul class="list-disc list-inside">
+        <li>Professor no Educagame</li>
+        <li>Ministrante no PETExchange</li>
+        <li>Palestrante na TECNO MONTE</li>
+        <li>Aprendiz na TEBRA</li>
+        <li>Recepcionista – Rodes Palace Hotel</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2 class="text-xl font-bold mb-2">Contato</h2>
+      <p><strong>Email:</strong> ian.seki@ufu.br</p>
+      <p><strong>Telefone:</strong> (34) 99812-2702</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/iandbseki" class="text-blue-600 underline">iandbseki</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/ibSeki" class="text-blue-600 underline">ibSeki</a></p>
+      <a href="cv.pdf" download class="inline-block mt-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+        <i class="fas fa-file-download"></i> Baixar Currículo
+      </a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
